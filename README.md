@@ -1,5 +1,7 @@
 # PhotoMetaScrub
 
+**🌐 Website:** [turhe123.github.io/photo-meta-scrub](https://turhe123.github.io/photo-meta-scrub/)
+
 Drop photos to see their hidden EXIF, GPS and camera data, then strip it all before you share.
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
@@ -27,7 +29,17 @@ Photos quietly carry GPS coordinates, camera and lens details, and timestamps. P
 
 ## Screenshots
 
-_Screenshots coming soon._
+<p align="center"><img src="docs/screenshots/01-metadata-viewer.png" alt="PhotoMetaScrub main window showing a photo&#x27;s GPS location on a map and its file metadata" width="720"></p>
+
+<p align="center"><em>Dropped photos appear in a sidebar with a red pin on those that carry GPS data, and the selected photo&#x27;s location is shown on a map above its grouped metadata.</em></p>
+
+<p align="center"><img src="docs/screenshots/02-custom-scrub.png" alt="PhotoMetaScrub showing camera and exposure metadata with the Custom scrub groups popover open" width="560"></p>
+
+<p align="center"><em>Camera, lens, exposure and date details are listed by group, and Custom mode lets you pick exactly which groups to remove before scrubbing.</em></p>
+
+<p align="center"><img src="docs/screenshots/03-settings.png" alt="PhotoMetaScrub Settings window" width="560"></p>
+
+<p align="center"><em>Settings cover the default scrub mode, copy suffix, output folder, replacing originals, and the map and address-lookup privacy toggles.</em></p>
 
 ## Install
 

@@ -1,0 +1,24 @@
+{
+  "seo_title": "Photo metadata remover for macOS",
+  "seo_description": "Free, open-source Mac app that shows the EXIF, GPS and camera data hiding in your photos, then strips it before you share. Native, offline, no account.",
+  "hero_title_line1": "See what your photos reveal.",
+  "hero_title_accent": "Scrub it before sharing.",
+  "hero_sub": "Drop JPEG, HEIC, PNG or TIFF photos onto the window or Dock icon to inspect their hidden metadata, then remove everything or just the location. Scrub All is Shift-Command-S.",
+  "features_title": "Inspect first, then scrub.",
+  "features_sub": "Everything runs locally on your Mac with Apple frameworks only, from reading metadata to writing clean copies.",
+  "features": [
+    {"icon": "eye", "title": "Grouped metadata viewer", "desc": "See File, Camera & Lens, Exposure, Date & Time, GPS and Other details for every photo, with friendly names. Copy it all as text with Shift-Command-C."},
+    {"icon": "shield", "title": "Three scrub modes", "desc": "Remove Everything, Remove Location Only, or Custom to pick which groups go. Orientation is always kept so photos still display the right way up."},
+    {"icon": "image", "title": "Batch drop for many photos", "desc": "Drop several images or whole folders at once. A sidebar shows thumbnails with a red pin on photos that contain GPS data."},
+    {"icon": "display", "title": "Map for geotagged photos", "desc": "Photos with coordinates show a MapKit pin. Address lookup is off by default because it sends coordinates to Apple."},
+    {"icon": "folder", "title": "Safe output options", "desc": "Write copies with a suffix such as -clean to a folder you choose, or replace originals after a confirmation with the old files moved to the Trash."},
+    {"icon": "lock", "title": "No recompression where possible", "desc": "The compressed image data is copied and the metadata replaced, then re-read to verify it is clean. If that fails, it re-encodes at maximum quality and tells you which files."}
+  ],
+  "permissions_step": "No special permissions are required; macOS may ask for access to folders like Desktop or Documents when you open photos from them.",
+  "faq": [
+    {"q": "Is PhotoMetaScrub really free and open source?", "a": "Yes. It is released under the MIT license, the full source is on GitHub, and there are no ads, accounts or subscriptions. If it is useful to you, there is an optional Support button that opens the author's Ko-fi page."},
+    {"q": "What permissions does it need?", "a": "None beyond the files and folders you choose. It does not request Accessibility, Screen Recording, Camera, Microphone or Photos-library access. The only network use is MapKit map tiles and the optional address lookup, and you can turn off both in Settings."},
+    {"q": "Where is my data stored?", "a": "Nothing is uploaded or collected, and there is no analytics or backend. Cleaned copies go to the output folder you choose, or replace the originals beside them if you enable that, and the app keeps only your preferences in Settings."},
+    {"q": "Why isn't the app notarized?", "a": "Notarization requires a paid Apple Developer account, and this is a free open-source project. Right-click the app and choose Open once to get past Gatekeeper, or build it yourself from source with Xcode."}
+  ]
+}

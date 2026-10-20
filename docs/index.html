@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhotoMetaScrub — Photo metadata remover for macOS</title>
+  <meta name="description" content="Free, open-source Mac app that shows the EXIF, GPS and camera data hiding in your photos, then strips it before you share. Native, offline, no account.">
+  <meta name="theme-color" content="#0b0b10">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PhotoMetaScrub — Photo metadata remover for macOS">
+  <meta property="og:description" content="Free, open-source Mac app that shows the EXIF, GPS and camera data hiding in your photos, then strips it before you share. Native, offline, no account.">
+  <meta property="og:url" content="https://turhe123.github.io/photo-meta-scrub/">
+  <meta property="og:image" content="https://turhe123.github.io/photo-meta-scrub/screenshots/01-metadata-viewer.png">
+  <meta property="og:site_name" content="PhotoMetaScrub">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PhotoMetaScrub — Photo metadata remover for macOS">
+  <meta name="twitter:description" content="Free, open-source Mac app that shows the EXIF, GPS and camera data hiding in your photos, then strips it before you share. Native, offline, no account.">
+  <meta name="twitter:image" content="https://turhe123.github.io/photo-meta-scrub/screenshots/01-metadata-viewer.png">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>window.APP_CONFIG = { RELEASE_API_URL: "https://api.github.com/repos/turhe123/photo-meta-scrub/releases/latest", ASSET_NAME: "PhotoMetaScrub-macOS.zip" };</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--violet"></div>
+    <div class="bg-glow bg-glow--cyan"></div>
+    <div class="bg-noise"></div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="PhotoMetaScrub home">
+        <span class="logo-mark" aria-hidden="true"><img src="assets/icon.png" width="26" height="26" alt="" style="border-radius:7px"></span>
+        <span class="logo-text">PhotoMetaScrub</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="https://github.com/turhe123/photo-meta-scrub" target="_blank" rel="noopener">GitHub</a></li>
+        <li class="nav-cta"><a class="btn btn--small btn--primary" href="https://github.com/turhe123/photo-meta-scrub/releases/latest/download/PhotoMetaScrub-macOS.zip" data-download>Download</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy">
+        <img class="app-icon-hero reveal" src="assets/icon.png" alt="PhotoMetaScrub icon" width="84" height="84">
+        <p class="eyebrow reveal"><span class="eyebrow-dot" aria-hidden="true"></span>Open source · macOS 14+ · Universal binary · Files & Conversion</p>
+        <h1 class="hero-title reveal">See what your photos reveal.<br><span class="grad-text">Scrub it before sharing.</span></h1>
+        <p class="hero-sub reveal">Drop JPEG, HEIC, PNG or TIFF photos onto the window or Dock icon to inspect their hidden metadata, then remove everything or just the location. Scrub All is Shift-Command-S.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn--primary btn--large" href="https://github.com/turhe123/photo-meta-scrub/releases/latest/download/PhotoMetaScrub-macOS.zip" data-download>
+            <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L9 11.6V3a1 1 0 0 1 1-1Zm-7 13a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+            Download for macOS
+          </a>
+          <a class="btn btn--ghost btn--large" href="https://github.com/turhe123/photo-meta-scrub" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <p class="hero-hint reveal">Free &amp; MIT licensed · Apple Silicon &amp; Intel · <span data-version>Latest release</span></p>
+      </div>
+      <div class="hero-shot reveal">
+        <img src="screenshots/01-metadata-viewer.png" alt="PhotoMetaScrub main window showing a photo&#x27;s GPS location on a map and its file metadata" loading="eager">
+      </div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-head reveal">
+        <p class="section-kicker">Features</p>
+        <h2 class="section-title">Inspect first, then scrub.</h2>
+        <p class="section-sub">Everything runs locally on your Mac with Apple frameworks only, from reading metadata to writing clean copies.</p>
+      </div>
+      <div class="features">
+        <article class="card reveal">
+          <div class="card-icon card-icon--violet"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></div>
+          <h3>Grouped metadata viewer</h3>
+          <p>See File, Camera Lens, Exposure, Date Time, GPS and Other details for every photo, with friendly names. Copy it all as text with Shift-Command-C.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--cyan"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Three scrub modes</h3>
+          <p>Remove Everything, Remove Location Only, or Custom to pick which groups go. Orientation is always kept so photos still display the right way up.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--grad"><svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="m3 16 5-5 4 4 3-3 6 6"/><circle cx="16" cy="9" r="1.6" fill="currentColor"/></svg></div>
+          <h3>Batch drop for many photos</h3>
+          <p>Drop several images or whole folders at once. A sidebar shows thumbnails with a red pin on photos that contain GPS data.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--violet"><svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8m-4-4v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Map for geotagged photos</h3>
+          <p>Photos with coordinates show a MapKit pin. Address lookup is off by default because it sends coordinates to Apple.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--cyan"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+          <h3>Safe output options</h3>
+          <p>Write copies with a suffix such as -clean to a folder you choose, or replace originals after a confirmation with the old files moved to the Trash.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon card-icon--grad"><svg viewBox="0 0 24 24" width="22" height="22"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></div>
+          <h3>No recompression where possible</h3>
+          <p>The compressed image data is copied and the metadata replaced, then re-read to verify it is clean. If that fails, it re-encodes at maximum quality and tells you which files.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="screenshots">
+      <div class="section-head reveal">
+        <p class="section-kicker">Screenshots</p>
+        <h2 class="section-title">See it in action.</h2>
+      </div>
+      <div class="gallery reveal">
+        <figure><img src="screenshots/01-metadata-viewer.png" alt="PhotoMetaScrub main window showing a photo&#x27;s GPS location on a map and its file metadata" loading="lazy"><figcaption>Dropped photos appear in a sidebar with a red pin on those that carry GPS data, and the selected photo&#x27;s location is shown on a map above its grouped metadata.</figcaption></figure>
+        <figure><img src="screenshots/02-custom-scrub.png" alt="PhotoMetaScrub showing camera and exposure metadata with the Custom scrub groups popover open" loading="lazy"><figcaption>Camera, lens, exposure and date details are listed by group, and Custom mode lets you pick exactly which groups to remove before scrubbing.</figcaption></figure>
+        <figure><img src="screenshots/03-settings.png" alt="PhotoMetaScrub Settings window" loading="lazy"><figcaption>Settings cover the default scrub mode, copy suffix, output folder, replacing originals, and the map and address-lookup privacy toggles.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section container section--narrow" id="install">
+      <div class="section-head reveal">
+        <p class="section-kicker">Install</p>
+        <h2 class="section-title">Up and running in a minute.</h2>
+        <p class="section-sub">PhotoMetaScrub is open source and not notarized with a paid Apple Developer ID, so macOS needs one extra step the first time.</p>
+      </div>
+      <ol class="steps reveal">
+        <li>Download <strong>PhotoMetaScrub-macOS.zip</strong> and unzip it.</li>
+        <li>Move <strong>PhotoMetaScrub.app</strong> to your <strong>Applications</strong> folder.</li>
+        <li>Clear the quarantine flag once, then right-click the app and choose <strong>Open</strong>:<pre>xattr -cr /Applications/PhotoMetaScrub.app</pre></li>
+        <li>No special permissions are required macOS may ask for access to folders like Desktop or Documents when you open photos from them.</li>
+      </ol>
+    </section>
+
+    <section class="section container" id="download">
+      <div class="download-card reveal">
+        <div class="download-glow" aria-hidden="true"></div>
+        <div class="download-copy">
+          <p class="section-kicker">Download</p>
+          <h2 class="section-title">Get PhotoMetaScrub for macOS</h2>
+          <p class="section-sub">Free, forever. Built for macOS 14 Sonoma or newer, Apple Silicon and Intel.</p>
+          <div class="download-actions">
+            <a class="btn btn--primary btn--large" href="https://github.com/turhe123/photo-meta-scrub/releases/latest/download/PhotoMetaScrub-macOS.zip" data-download>
+              <svg aria-hidden="true" viewBox="0 0 20 20" width="18" height="18"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L9 11.6V3a1 1 0 0 1 1-1Zm-7 13a1 1 0 0 1 1 1v1h12v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1Z"/></svg>
+              Download for macOS
+            </a>
+            <a class="btn btn--ghost btn--large" href="https://github.com/turhe123/photo-meta-scrub/releases/latest" target="_blank" rel="noopener">All releases</a>
+          </div>
+          <p class="release-meta" data-release-meta>PhotoMetaScrub-macOS.zip · GitHub Releases</p>
+          <p class="download-hint">Not notarized: on first launch right-click <strong>PhotoMetaScrub.app → Open</strong>.</p>
+        </div>
+        <div class="download-aside">
+          <div class="app-tile" aria-hidden="true"><img src="assets/icon.png" width="72" height="72" alt="" style="border-radius:18px"></div>
+          <ul class="download-facts">
+            <li>macOS 14 Sonoma+</li>
+            <li>Universal (Apple Silicon + Intel)</li>
+            <li>MIT licensed · open source</li>
+            <li>No ads, no accounts, no telemetry</li>
+            <li>Built with Claude Code · <a href="https://github.com/turhe123/photo-meta-scrub#built-with-ai" target="_blank" rel="noopener">how and why</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container section--narrow" id="faq">
+      <div class="section-head reveal">
+        <p class="section-kicker">FAQ</p>
+        <h2 class="section-title">Questions, answered.</h2>
+      </div>
+      <div class="faq reveal">
+        <details class="faq-item" open><summary>Is PhotoMetaScrub really free and open source?</summary><div class="faq-body"><p>Yes. It is released under the MIT license, the full source is on GitHub, and there are no ads, accounts or subscriptions. If it is useful to you, there is an optional Support button that opens the author&#x27;s Ko-fi page.</p></div></details>
+        <details class="faq-item"><summary>What permissions does it need?</summary><div class="faq-body"><p>None beyond the files and folders you choose. It does not request Accessibility, Screen Recording, Camera, Microphone or Photos-library access. The only network use is MapKit map tiles and the optional address lookup, and you can turn off both in Settings.</p></div></details>
+        <details class="faq-item"><summary>Where is my data stored?</summary><div class="faq-body"><p>Nothing is uploaded or collected, and there is no analytics or backend. Cleaned copies go to the output folder you choose, or replace the originals beside them if you enable that, and the app keeps only your preferences in Settings.</p></div></details>
+        <details class="faq-item"><summary>Why isn&#x27;t the app notarized?</summary><div class="faq-body"><p>Notarization requires a paid Apple Developer account, and this is a free open-source project. Right-click the app and choose Open once to get past Gatekeeper, or build it yourself from source with Xcode.</p></div></details>
+        <details class="faq-item"><summary>Was this written by AI?</summary><div class="faq-body"><p>Yes. PhotoMetaScrub was generated by Claude Code from a written spec as a clean-room reimplementation, with no code or assets from any commercial app. The full source is on GitHub under MIT, so you can read every line before you run it. It has had less human review than a hand-written app, so bug reports are welcome.</p></div></details>
+      </div>
+    </section>
+
+    <section class="section container section--narrow" id="support">
+      <div class="support-card reveal">
+        <p class="section-kicker">Support ❤️</p>
+        <h2 class="section-title">Built by one person, given away for free.</h2>
+        <p>PhotoMetaScrub is a free, open-source alternative to paid utilities. If it earns a spot on your Mac, a coffee keeps the updates coming.</p>
+        <a class="btn btn--kofi btn--large" href="https://ko-fi.com/leodavidai" target="_blank" rel="noopener">☕ Support Or on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Or Davidai Bachar · MIT License</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/turhe123/photo-meta-scrub" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://ko-fi.com/leodavidai" target="_blank" rel="noopener">Ko-fi</a></li>
+        <li><a href="https://github.com/turhe123/photo-meta-scrub/issues" target="_blank" rel="noopener">Report a bug</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
